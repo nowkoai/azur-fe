@@ -19,10 +19,8 @@ const FormInput = () => {
       isMan: true
     }))
 
-    console.log('🚀 ~ process.env.NEXT_PUBLIC_URL ~ 🚀', process.env.NEXT_PUBLIC_URL)
-
     const url = '/api/onyourdata'
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}${url}`, {
+    const response = await fetch(`${url}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
